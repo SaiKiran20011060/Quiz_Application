@@ -1,0 +1,73 @@
+{
+  "Python Basics": {
+    "questions": [
+      "What is the output of: print(2 ** 3)",
+      "Which keyword is used to define a function in Python?",
+      "What does len([1, 2, 3]) return?",
+      "Which of the following is a mutable data type?",
+      "What is the correct way to create a list?",
+      "Which operator is used for floor division?",
+      "What is the output of: print('Hello' + 'World')",
+      "Which method is used to add an element to a list?",
+      "What is the correct syntax for a for loop?",
+      "Which function is used to get user input?"
+    ],
+    "choices": [
+      ["A) 6", "B) 8", "C) 9", "D) 5"],
+      ["A) function", "B) def", "C) define", "D) func"],
+      ["A) 2", "B) 3", "C) 4", "D) Error"],
+      ["A) tuple", "B) string", "C) list", "D) int"],
+      ["A) list = []", "B) list = ()", "C) list = {}", "D) All correct"],
+      ["A) /", "B) //", "C) %", "D) **"],
+      ["A) HelloWorld", "B) Hello World", "C) Error", "D) Hello+World"],
+      ["A) add()", "B) append()", "C) insert()", "D) Both B and C"],
+      ["A) for i in range:", "B) for i in range():", "C) for i range():", "D) for in range():"],
+      ["A) input()", "B) get()", "C) read()", "D) scan()"]
+    ],
+    "answers": [1, 1, 1, 2, 0, 1, 0, 3, 1, 0]
+  },
+  "Python Advanced": {
+    "questions": [
+      "What is a lambda function?",
+      "Which module is used for regular expressions?",
+      "What does 'self' represent in a class?",
+      "Which decorator is used for static methods?",
+      "What is list comprehension?",
+      "What is the purpose of __init__ method?",
+      "Which keyword is used for inheritance?",
+      "What is a generator in Python?",
+      "Which method is called when an object is created?",
+      "What is the difference between == and is?"
+    ],
+    "choices": [
+      ["A) Named function", "B) Anonymous function", "C) Class method", "D) Built-in function"],
+      ["A) regex", "B) re", "C) regexp", "D) regular"],
+      ["A) Class name", "B) Instance reference", "C) Method name", "D) Variable"],
+      ["A) @static", "B) @staticmethod", "C) @classmethod", "D) @property"],
+      ["A) Loop syntax", "B) Compact way to create lists", "C) Function type", "D) Class feature"],
+      ["A) Initialize object", "B) Delete object", "C) Copy object", "D) Print object"],
+      ["A) extends", "B) inherits", "C) class Child(Parent)", "D) import"],
+      ["A) Function that yields values", "B) Class creator", "C) Loop type", "D) Variable type"],
+      ["A) __new__", "B) __init__", "C) __create__", "D) __start__"],
+      ["A) No difference", "B) == compares values, is compares identity", "C) is compares values, == compares identity", "D) Both are same"]
+    ],
+    "answers": [1, 1, 1, 1, 1, 0, 2, 0, 0, 1]
+  },
+  "Data Structures": {
+    "questions": [
+      "Which data structure follows LIFO principle?",
+      "What is the time complexity of searching in a hash table?",
+      "Which sorting algorithm has the best average case complexity?",
+      "What is a binary tree?",
+      "Which data structure is used for BFS traversal?"
+    ],
+    "choices": [
+      ["A) Queue", "B) Stack", "C) List", "D) Array"],
+      ["A) O(n)", "B) O(log n)", "C) O(1)", "D) O(n²)"],
+      ["A) Bubble Sort", "B) Quick Sort", "C) Selection Sort", "D) Insertion Sort"],
+      ["A) Tree with 2 nodes", "B) Tree where each node has at most 2 children", "C) Tree with 2 levels", "D) Tree with binary data"],
+      ["A) Stack", "B) Queue", "C) Array", "D) Linked List"]
+    ],
+    "answers": [1, 2, 1, 1, 1]
+  }
+}

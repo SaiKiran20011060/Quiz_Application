@@ -248,21 +248,30 @@ class QuizApp:
         except (FileNotFoundError, json.JSONDecodeError):
             self.users = {}
 
+        users_updated = False
+
         # Ensure the root admin user "sai kiran" exists and has the correct role.
         root_admin_user = "sai kiran"
-        
-        # Check if the user exists and if their role is correct.
         if root_admin_user not in self.users or self.users[root_admin_user].get("role") != "root_admin":
             root_admin_password = "sai123@R"
             password_hash = hashlib.sha256(root_admin_password.encode()).hexdigest()
-            
-            # If the user doesn't exist, create a new entry.
             if root_admin_user not in self.users:
                 self.users[root_admin_user] = {}
-
-            # Update/set the password and role. This ensures the account is always an admin.
             self.users[root_admin_user]["password"] = password_hash
             self.users[root_admin_user]["role"] = "root_admin"
+            users_updated = True
+
+        # Ensure a default demo user exists for testing.
+        demo_user_name = "demo"
+        if demo_user_name not in self.users:
+            demo_user_password = "demo"
+            password_hash = hashlib.sha256(demo_user_password.encode()).hexdigest()
+            self.users[demo_user_name] = {
+                "password": password_hash, "role": "user"
+            }
+            users_updated = True
+
+        if users_updated:
             self._save_users()
 
     def _save_users(self):
